@@ -5,6 +5,18 @@
 .logo-primary {
   width: 64px;
   height: 64px;
+  @include small-and-above{
+    width: auto;
+    height: 50px;
+    float: left;
+  }
+}
+.logo:after{
+  @include small-and-above{
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 .logo-primary img {
   height: 100%;

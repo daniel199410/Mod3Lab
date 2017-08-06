@@ -1,3 +1,4 @@
+/*768px / 16px = 48em*/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -420,10 +421,10 @@ a:hover {
     float: left; }
   /* Column Two Thirds */
   .col-2-3 {
-    width: 66.6666%; }
+    width: 66.66667%; }
   /* Column Third */
   .col-1-3 {
-    width: 33.3333%; }
+    width: 33.33333%; }
   /* Column Half */
   .col-1-2 {
     width: 50%; } }
@@ -483,6 +484,16 @@ a:hover {
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px; }
+  @media only screen and (min-width: 48em) {
+    .header-primary {
+      background: none;
+      position: absolute;
+      z-index: 99;
+      width: 100%; }
+      .header-primary:after {
+        content: "";
+        display: table;
+        clear: both; } }
 
 .hero {
   text-align: center; }
@@ -492,6 +503,9 @@ a:hover {
   color: white;
   padding-top: 25px;
   padding-bottom: 25px; }
+  @media only screen and (min-width: 48em) {
+    .hero-primary {
+      padding-top: 150px; } }
 
 .hero-primary.bg-image > img {
   opacity: 0.55; }
@@ -520,6 +534,17 @@ a:hover {
 .logo-primary {
   width: 64px;
   height: 64px; }
+  @media only screen and (min-width: 48em) {
+    .logo-primary {
+      width: auto;
+      height: 50px;
+      float: left; } }
+
+@media only screen and (min-width: 48em) {
+  .logo:after {
+    content: "";
+    display: table;
+    clear: both; } }
 
 .logo-primary img {
   height: 100%; }
@@ -545,6 +570,14 @@ a:hover {
 
 .nav-primary {
   margin-top: 28px; }
+  @media only screen and (min-width: 48em) {
+    .nav-primary {
+      float: right;
+      width: 60%;
+      text-align: right;
+      margin-top: 0px; }
+      .nav-primary li {
+        display: inline-block; } }
 
 .background-primary {
   background: #F7941E; }
